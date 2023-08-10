@@ -26,10 +26,11 @@ import hourFormatter from '@/data/hour';
 export default async function Header() {
   const date = new Date() //dados da data e horario
  
-  const apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY //chave no arquivo env
+  // const apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY //chave no arquivo env
 
-  const response = await fetch(` https://api.openweathermap.org/data/2.5/weather?lat=-22,3145&lon=-49,0587&lang=pt_br&appid=${apiKey}&units=metric`)  //chamada para api 
-  const data = await response.json() //resposta da chamada armazenada em data 
+  // const response = await fetch(` https://api.openweathermap.org/data/2.5/weather?lat=-22,3145&lon=-49,0587&lang=pt_br&appid=${apiKey}&units=metric`)  //chamada para api 
+  // const data = await response.json() //resposta da chamada armazenada em data 
+
 
 
   return (
@@ -47,7 +48,7 @@ export default async function Header() {
       <div className='flex items-center justify-between h-26 p-4 bg-gray-100 '>
 
 
-        <p>{JSON.stringify(data.main.temp)}ºC</p>
+        {/* <p>{JSON.stringify(data.main.temp)}ºC</p> */}
         <Image src={logo} alt={'Logo News'} height={90}/>
         
         <div className='flex h-8'>
