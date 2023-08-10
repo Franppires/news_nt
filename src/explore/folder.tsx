@@ -1,5 +1,4 @@
-'use client';
-
+'use client' 
 import * as Collapsible from '@radix-ui/react-collapsible';
 import { ChevronDown, ChevronRight } from 'lucide-react';
 import { ReactNode, useState } from 'react';
@@ -17,18 +16,32 @@ export default function Folder({
 }: Folder) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
+  const handleContentClick = () => {
+    // Fechar o colapso quando o conteúdo for clicado
+    setIsOpen(false);
+  };
+
   return (
     <Collapsible.Root open={isOpen} onOpenChange={setIsOpen}>
-      <div className='flex align-items-center'>
-        <span>{title}</span>
-        <Collapsible.Trigger>
-          {isOpen ? <ChevronDown /> : <ChevronRight />}
-        </Collapsible.Trigger>
+      <div className='relative'>
+        <div className='flex align-items-center hover:underline'>
+          <span>{title}</span>
+          <Collapsible.Trigger>
+            {isOpen ? <ChevronDown /> : <ChevronRight />}
+          </Collapsible.Trigger>
+        </div>
+        
+        {isOpen && (
+          <Collapsible.Content className={`left-0 mt-2 w-full`} onClick={handleContentClick}>
+            <div className='flex flex-col'>
+              {children}
+            </div>
+          </Collapsible.Content>
+        )}
       </div>
-
-      <Collapsible.Content className='flex gap-2'>
-        {children}
-      </Collapsible.Content>
     </Collapsible.Root>
   );
 }
+
+
+
