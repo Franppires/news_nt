@@ -1,4 +1,5 @@
 import { Article, Root } from '@/interface/interfaceNews';
+import Image from 'next/image';
 import React from 'react';
 
 export default async function Home() {
@@ -24,7 +25,7 @@ export default async function Home() {
         <div className="flex flex-wrap">
           <div className="w-full md:w-2/3 relative ">
             <h3 className="text-4xl font-semibold mb-2">Principal </h3>
-            <img src="https://picsum.photos/900?grayscale" alt="Imagem da Notícia" className="w-full h-auto" />
+            <Image src="https://picsum.photos/900?grayscale" alt="Imagem da Notícia" className="w-full h-auto" />
             <div className="absolute inset-0 bg-opacity-50 flex flex-col justify-center p-6 text-white">
               <h2 className="text-5xl font-bold mb-2">{mainArticle.title}</h2>
               <p>{mainArticle.description}</p>
