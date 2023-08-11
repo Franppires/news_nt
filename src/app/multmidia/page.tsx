@@ -1,8 +1,10 @@
 export default function Multmidia() {
   return (
-    <div className='flex items-center justify-between bg-black-800 w-5/6 mx-auto'>
-      Multmídia
-    </div>
+    <>
+      <div className='flex items-center justify-center bg-red-800 h-12 p-8'>
+        <h1 className="text-2xl font-bold uppercase">Multmidia</h1>
+      </div>
+    </>
   );
 }
 

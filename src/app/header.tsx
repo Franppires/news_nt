@@ -45,7 +45,7 @@ export default async function Header() {
           <Facebook />
         </nav>
       </div>
-      <div className='flex items-center justify-between h-26 p-4 bg-gray-100 '>
+      <div className='flex items-center justify-between h-26 p-4 bg-gray-600 '>
 
 
         {/* <p>{JSON.stringify(data.main.temp)}ºC</p> */}
@@ -56,12 +56,12 @@ export default async function Header() {
           <Search className='bg-red-800 rounded-r-md px-1 cursor-pointer' size={32} />
         </div>
       </div>
-      <div className='flex items-center justify-between h-14 bg-gray-100 border-t-2 '>
+      <div className='flex items-center justify-between h-14 bg-gray-800 border-t-2 '>
         <div className='flex gap-1 hover:bg-red-800 p-4 '>
           <HomeIcon size={20} />
           <Link className='hover:underline' href='/'>Home</Link>
         </div>
-        <div className='flex gap-1 bg-red-800 p-4'>
+        <div className='flex gap-1 hover:bg-red-800 p-4'>
           <ClipboardEdit size={20} />
           <Folder title='Editoriais' >
             <Link className='hover:underline' href='/editoriais/saude'>Saúde</Link>
@@ -108,5 +108,6 @@ export default async function Header() {
         </div>
       </div>
     </div>
+    
   );
 }
