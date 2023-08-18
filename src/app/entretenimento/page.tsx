@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import { Article } from '@/interface/interfaceNews';
+import { Result } from '@/interface/interfaceNews';
 import NewsApi from '@/api/news';
 
 
@@ -15,14 +15,14 @@ export default function Entertainment() {
       <div className="bg-gray-800">
         <div className="container mx-auto py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {dataNews?.articles.map((article: Article, index: number) => (
+            {dataNews?.results.map((article: Result, index: number) => (
               <div key={index} className="bg-gray-700 p-4 rounded-lg shadow-md flex">
-                <img className="w-32 h-auto mr-4" src='' alt={article.author} />
+                {/* <img className="w-32 h-auto mr-4" src='' alt={article.} /> */}
                 <div>
-                  <h2 className="text-xl font-semibold mb-2">{article.title}</h2>
+                  {/* <h2 className="text-xl font-semibold mb-2">{article.}</h2>
                   <p className="text-gray-600">{article.description}</p>
                   <p className=''>{article.author}</p>
-                  <a href={article.url} target='_blank' className="hover:text-blue-500">Saber mais</a>
+                  <a href={article.url} target='_blank' className="hover:text-blue-500">Saber mais</a> */}
                 </div>
               </div>
               )
