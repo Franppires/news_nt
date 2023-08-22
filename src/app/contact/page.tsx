@@ -9,8 +9,8 @@ export default function Contact() {
      
       <div className=" flex p-4 gap-4">
         <div>
-          <h3 className="text-4xl mb-2">Let's Talk</h3>
-          <p className="text-xl mb-8">You have any news? So get in touch, we'd love to spread the word!</p>
+          <h3 className="text-4xl mb-2">Let Talk</h3>
+          <p className="text-xl mb-8">You have any news? So get in touch, we love to spread the word!</p>
           <p className="text-2xl">Our opening hours are</p>
           <p className="text-xl mb-8"> 08:00 to 18:00 from Monday to Saturday</p>
           <p className="text-2xl">E-mail</p>
