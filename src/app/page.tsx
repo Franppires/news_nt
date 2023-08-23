@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="bg-gray-100">
       <div className='flex items-center justify-center bg-red-800 h-12 p-8'>
-        <h1 className="text-2xl font-bold uppercase">Notícias do Dia</h1>
+        <h1 className="text-2xl font-bold uppercase">news of the day</h1>
       </div>
       <div className="p-4 bg-gray-200">
         <div className="flex flex-wrap">

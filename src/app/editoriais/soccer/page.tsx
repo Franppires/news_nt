@@ -14,7 +14,7 @@ export default function Soccer() {
   return (
     <div className="bg-gray-100">
       <div className='flex items-center justify-center bg-red-800 h-12 p-8'>
-        <h1 className="text-2xl font-bold uppercase">Região</h1>
+        <h1 className="text-2xl font-bold uppercase">Soccer</h1>
       </div>
       <div className="p-4 bg-gray-200">
         <div className="w-full pl-3">
