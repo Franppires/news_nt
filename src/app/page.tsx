@@ -21,7 +21,6 @@ export default function Home() {
       <div className="p-4 bg-white">
         <div className="flex flex-wrap">
           <div className="w-full md:w-2/3 pr-3">
-
           {/* <h3 className="text-4xl font-semibold mb-2">Principal</h3> */}
           <ul className="space-y-4">
             {mainArticles.map((article: Result, index) => (

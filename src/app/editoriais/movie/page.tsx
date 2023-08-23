@@ -2,7 +2,7 @@
 import NewsApi from "@/api/news";
 import { Result } from "@/interface/interfaceNews";
 
-export default function Geral() {
+export default function Movie() {
   const dataNews = NewsApi();
 
   if (!dataNews) {

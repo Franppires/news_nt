@@ -2,7 +2,7 @@
 import NewsApi from "@/api/news";
 import { Result } from "@/interface/interfaceNews";
 
-export default function Saude() {
+export default function Region() {
   const dataNews = NewsApi();
 
   if (!dataNews) {
@@ -14,7 +14,7 @@ export default function Saude() {
   return (
     <div className="bg-gray-100">
       <div className='flex items-center justify-center bg-red-800 h-12 p-8'>
-        <h1 className="text-2xl font-bold uppercase">Saúde</h1>
+        <h1 className="text-2xl font-bold uppercase">Região</h1>
       </div>
       <div className="p-4 bg-white">
         <div className="w-full pl-3">

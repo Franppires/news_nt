@@ -2,7 +2,7 @@
 import NewsApi from "@/api/news";
 import { Result } from "@/interface/interfaceNews";
 
-export default function Brasil() {
+export default function General() {
   const dataNews = NewsApi();
 
   if (!dataNews) {

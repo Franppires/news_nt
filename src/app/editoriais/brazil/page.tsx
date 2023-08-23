@@ -1,8 +1,8 @@
-'use client' 
+'use client'
 import NewsApi from "@/api/news";
 import { Result } from "@/interface/interfaceNews";
 
-export default function Internacional() {
+export default function Brazil() {
   const dataNews = NewsApi();
 
   if (!dataNews) {

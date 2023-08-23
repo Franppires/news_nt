@@ -2,7 +2,7 @@
 import NewsApi from "@/api/news";
 import { Result } from "@/interface/interfaceNews";
 
-export default function Futebol() {
+export default function Motor() {
   const dataNews = NewsApi();
 
   if (!dataNews) {
