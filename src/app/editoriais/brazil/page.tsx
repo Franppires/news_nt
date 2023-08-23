@@ -16,7 +16,7 @@ export default function Brazil() {
       <div className='flex items-center justify-center bg-red-800 h-12 p-8'>
         <h1 className="text-2xl font-bold uppercase">Região</h1>
       </div>
-      <div className="p-4 bg-white">
+      <div className="p-4 bg-gray-200">
         <div className="w-full pl-3">
           <ul className="space-y-4">
             {otherArticles.map((article: Result, index) => (

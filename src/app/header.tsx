@@ -25,18 +25,11 @@ import hourFormatter from '@/data/hour';
 
 export default async function Header() {
   const date = new Date() //dados da data e horario
- 
-  // const apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY //chave no arquivo env
-
-  // const response = await fetch(` https://api.openweathermap.org/data/2.5/weather?lat=-22,3145&lon=-49,0587&lang=pt_br&appid=${apiKey}&units=metric`)  //chamada para api 
-  // const data = await response.json() //resposta da chamada armazenada em data 
-
-
 
   return (
-    <div className=''>
-      <div className='flex items-center justify-between bg-red-800 h-12 items-center p-4 '>
-        <p className='capitalize'>{dateFormatter(date)}</p>
+    <div >
+      <div className='flex flex-col md:flex-row items-center justify-between bg-red-800 h-auto md:h-12 p-4'>
+        <p className='capitalize mb-2 md:mb-0'>{dateFormatter(date)}</p>
         <p>{hourFormatter(date)}</p>
         <nav className='flex gap-2'>
           <Youtube />
@@ -45,18 +38,16 @@ export default async function Header() {
           <Facebook />
         </nav>
       </div>
-      <div className='flex items-center justify-between h-26 p-4 bg-white '>
-
-
+      <div className='flex flex-col md:flex-row items-center justify-between h-auto md:h-26 p-4 bg-gray-200'>
         {/* <p>{JSON.stringify(data.main.temp)}ºC</p> */}
         <Image src={logo} alt={'Logo News'} height={90}/>
-        
-        <div className='flex h-8'>
-          <input className='rounded-l-md bg-gray-100' type='text' placeholder=' SEARCH' />
-          <Search className='bg-red-800 rounded-r-md px-1 cursor-pointer' size={32} />
+
+        <div className='flex mt-4 md:mt-0'>
+          <input className='rounded-l-md bg-gray-100 py-1 px-2' type='text' placeholder=' SEARCH' />
+          <Search className='bg-red-800 rounded-r-md px-2 cursor-pointer' size={32} />
         </div>
       </div>
-      <div className='flex items-center justify-between h-14 bg-white border-t-2 text-black '>
+      <div className='flex flex-col md:flex-row items-center justify-between h-auto md:h-14 bg-gray-200 border-t-2 text-black'>
         <div className='flex gap-1 hover:bg-red-800 p-4 hover:text-white'>
           <HomeIcon size={20} />
           <Link className='hover:underline' href='/'>Home</Link>

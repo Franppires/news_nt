@@ -18,7 +18,7 @@ export default function Multimedia() {
       <div className='flex items-center justify-center bg-red-800 h-12 p-8'>
         <h1 className="text-2xl font-bold uppercase">Multimedia</h1>
       </div>
-      <div className="p-4 bg-white">
+      <div className="p-4 bg-gray-200">
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 pr-3">
           <ul className="space-y-4">
