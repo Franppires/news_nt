@@ -1,27 +1,28 @@
 'use client'
-import NewsApi from '@/api/news';
-import { Result } from '@/interface/interfaceNews';
 import React from 'react';
+import { Result } from '@/interface/interfaceNews';
+import NewsApi from '@/api/news';
 
-export default function Home() {
+
+export default function Entertainment() {
   const dataNews = NewsApi();
 
   if (!dataNews) {
     return <p>Carregando...</p>;
   }
   
-  const mainArticles = dataNews.results.slice(0, 5);
-  const otherArticles = dataNews.results.slice(5);
+  const mainArticles = dataNews.results.slice(0, 7);
+  const otherArticles = dataNews.results.slice(7);
+
 
   return (
     <div className="bg-gray-100">
       <div className='flex items-center justify-center bg-red-800 h-12 p-8'>
-        <h1 className="text-2xl font-bold uppercase">Notícias do Dia</h1>
+        <h1 className="text-2xl font-bold uppercase">Entertainment</h1>
       </div>
       <div className="p-4 bg-gray-200">
         <div className="flex flex-wrap">
-          <div className="w-full md:w-2/3 pr-3">
-          {/* <h3 className="text-4xl font-semibold mb-2">Principal</h3> */}
+          <div className="w-full md:w-1/2 pr-3">
           <ul className="space-y-4">
             {mainArticles.map((article: Result, index) => (
               <li key={index} className="relative rounded p-4 mb-4 overflow-hidden border-b-2">
@@ -36,9 +37,6 @@ export default function Home() {
                     <div className="relative z-10 md:w-3/4 bg-black bg-opacity-50 p-4 rounded-lg">
                       <a href="#" className="text-white font-bold text-xl mb-2">{article.title}</a>
                       <p className="text-white mb-4">{article.abstract}</p>               
-                      <p className="text-white mb-4">{article.byline}</p>
-                      <p className="text-white mb-4">{article.geo_facet}</p>      
-                      <p className="text-white mb-4">{article.section}</p>
                       <p className="text-white mb-4">{article.type}</p>
                       <p className="text-white mb-4">{article.updated}</p>
                       <a href={article.url} target='_blank' className=" bg-gray-200 p-2 rounded text-blue-500 hover:underline">Saber mais</a>                
@@ -49,8 +47,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="w-full md:w-1/3 pl-3">
-            <h4 className="text-4xl font-semibold mb-2 text-black	">Outras</h4>
+          <div className="w-full md:w-1/2 pl-3">
             <ul className="space-y-4">
               {otherArticles.map((article: Result, index) => (
                 <li key={index} className="bg-gray-100 rounded flex p-4 mb-4 ">
