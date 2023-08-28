@@ -1,34 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Desenvolvimento de Portal de Noticias
 
-First, run the development server:
+🔥 Participei do desafio empolgante de criar uma interface responsiva com base em layouts navegáveis.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+🎨 O foco principal foi garantir a responsividade perfeita para todas essas visualizações.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+💼 Implementei todos os elementos pela api do NYT, desenvolvi o layout mantendo a aparência e estrutura precisas.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🖥️ Utilizei as melhores práticas para criar uma estrutura semântica e estilização coesa, replicando com precisão os detalhes de tamanho e espaçamento.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+🎉 Utilizei Next para criar essa funcionalidade e garantir uma experiência dinâmica.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
